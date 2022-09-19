@@ -1,0 +1,91 @@
+#creating a list
+numbers = [1, 2, 3, 4, 5]
+index=numbers[3]
+last = numbers[-1]
+print(last)
+
+List=["hello",5464,True,766,626.5]
+print(List)
+
+# Update
+List[2]=False
+print(List)
+
+# Append 
+List.append("world")
+print(List)
+
+#Insert
+List.insert(5896,600)
+print(List)
+
+# delete
+del List[5]
+print(List)
+
+List.remove("hello")
+print(List)
+
+#frozen set in list
+list1=frozenset(List)
+print(list1)
+
+#string slicing
+str = "I want to go school"
+print(str[2:5])
+print(str[7:12])
+print(str[:])
+print(str[:6])
+print(str[6:])
+print(str[-10:-1])
+
+#tuple
+Tuple=("a","e",52,78,36,)
+print(Tuple)
+
+#indexing
+print("index of a:",Tuple.index("a"))
+print("index of 52:",Tuple.index(52))
+
+#deleting a whole tuple
+del Tuple
+
+#a way to insert a element in tuple
+a = ('a', 'e', '120.00')
+a = list(a)
+a.insert(3, 'i')
+a.insert(3, 'g')
+a = tuple(a)
+print (a)
+
+#frozen set in tuple
+Tuple=("a","e",52,78,36,)
+ft=frozenset(Tuple)
+print(ft)
+
+#dictionary
+Dict = {1: 'num1', 2: 'num2', 3: 'num3',4:'num4'}
+print(Dict)
+
+# Adding elements
+Dict[0] = 'num5'
+Dict[2] = 'num6'
+Dict[3] = 1
+print(Dict)
+
+# Adding set of values to a single Key
+Dict['Value_set'] = 2, 3, 4
+print(Dict)
+  
+# Updating  Key's Value
+Dict[2] = 'Welcome'
+print(Dict)
+  
+# Adding Nested Key value 
+Dict[5] = {'Nested': {'1': 'python', '2': 'java'}}
+print(Dict)
+
+#frozen set in dictionary
+dict1=frozenset(Dict)
+print(dict1)
+
