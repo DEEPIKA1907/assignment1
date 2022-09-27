@@ -1,0 +1,9 @@
+ r - reading file
+ r+ - reading and writing the file.
+ w - writing file
+ w+ - reading and writing the file.
+ a - writing file, append mode
+ a+ - reading and writing file, append mode.
+ 
+ 
+ 
