@@ -6,4 +6,47 @@
  a+ - reading and writing file, append mode.
  
  
- 
+file= open("/content/sample_data/file","w+")
+def add(x, y):
+  sum = x + y
+  file.write("sum of x and y is %d \n" %sum)
+  return sum
+def subtract(x, y):
+  sub= x - y
+  file.write("subraction of x and y  is %d \n" %sub)
+  return sub
+def multiply(x, y):
+  mul= x * y
+  file.write("multiplication of x and y  is %d \n" %mul)
+  return mul
+def divide(x, y):
+  div= x / y
+  file.write("division of x and y  is %d \n" %div)
+  return div
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+  choice = input("Enter choice(1/2/3/4): ")
+  if choice in ('1', '2', '3', '4'):
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    file.write("value of x   is %d \n" %num1)
+    file.write("value of y   is %d \n" %num2)
+    if choice == '1':
+      print(num1, "+", num2, "=", add(num1, num2))
+    elif choice == '2':
+      print(num1, "-", num2, "=", subtract(num1, num2))
+    elif choice == '3':
+      print(num1, "*", num2, "=", multiply(num1, num2))
+    elif choice == '4':
+      print(num1, "/", num2, "=", divide(num1, num2))
+    next_calculation = input("Let's do next calculation? (yes/no): ")
+    if next_calculation == "no":
+      break
+    else:
+      file.write("invalid input" )
